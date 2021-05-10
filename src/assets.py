@@ -9,7 +9,7 @@ from pygame import mixer
 mixer.init()
 
 # Used with os.path.join for cross platform paths
-ASSETPATH = 'Assets'
+ASSETPATH = os.path.join('..', 'Assets')
 
 # Load the sounds
 BUT_SOUNDS = [mixer.Sound(os.path.join(ASSETPATH, f'sound{i}.wav')) for i in range(1, 5)]
